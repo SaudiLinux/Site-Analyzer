@@ -1,0 +1,170 @@
+# تعليمات تثبيت أدوات تحليل وفحص أمان المواقع
+# Installation Instructions for Website Analysis and Security Testing Tools
+
+## متطلبات النظام | System Requirements
+
+### العربية:
+- Python 3.6 أو أحدث
+- نظام تشغيل: Windows, Linux, macOS
+- ذاكرة: 2GB RAM على الأقل (يوصى بـ 4GB للمواقع الكبيرة)
+- مساحة تخزين: 500MB على الأقل
+
+### English:
+- Python 3.6 or newer
+- Operating System: Windows, Linux, macOS
+- Memory: At least 2GB RAM (4GB recommended for large websites)
+- Storage: At least 500MB
+
+## طريقة التثبيت | Installation Methods
+
+### العربية:
+
+#### الطريقة 1: التثبيت من المصدر
+
+1. قم بتنزيل المشروع أو استنساخه:
+```
+git clone https://github.com/SaudiCrackers/site-analyzer.git
+cd site-analyzer
+```
+
+2. قم بتثبيت المتطلبات:
+```
+pip install -r requirements.txt
+```
+
+#### الطريقة 2: التثبيت باستخدام setup.py
+
+1. قم بتنزيل المشروع أو استنساخه:
+```
+git clone https://github.com/SaudiCrackers/site-analyzer.git
+cd site-analyzer
+```
+
+2. قم بتثبيت الحزمة:
+```
+python setup.py install
+```
+
+#### الطريقة 3: التثبيت باستخدام pip (إذا كان متاحًا)
+
+```
+pip install site-analyzer
+```
+
+### English:
+
+#### Method 1: Installation from Source
+
+1. Download or clone the project:
+```
+git clone https://github.com/SaudiCrackers/site-analyzer.git
+cd site-analyzer
+```
+
+2. Install the requirements:
+```
+pip install -r requirements.txt
+```
+
+#### Method 2: Installation using setup.py
+
+1. Download or clone the project:
+```
+git clone https://github.com/SaudiCrackers/site-analyzer.git
+cd site-analyzer
+```
+
+2. Install the package:
+```
+python setup.py install
+```
+
+#### Method 3: Installation using pip (if available)
+
+```
+pip install site-analyzer
+```
+
+## التحقق من التثبيت | Verify Installation
+
+### العربية:
+
+للتحقق من نجاح التثبيت، قم بتنفيذ الأمر التالي:
+
+```
+python site_analyzer.py --version
+```
+
+يجب أن ترى إصدار الأداة (مثل: Site Analyzer v1.0).
+
+### English:
+
+To verify successful installation, run the following command:
+
+```
+python site_analyzer.py --version
+```
+
+You should see the tool version (e.g., Site Analyzer v1.0).
+
+## حل المشكلات الشائعة | Troubleshooting Common Issues
+
+### العربية:
+
+#### مشكلة: خطأ في تثبيت المكتبات
+
+إذا واجهت مشاكل في تثبيت بعض المكتبات، جرب الحلول التالية:
+
+1. تأكد من تثبيت أدوات التطوير الأساسية:
+   - على Linux: `sudo apt-get install python3-dev build-essential`
+   - على Windows: تأكد من تثبيت Visual C++ Build Tools
+
+2. تثبيت المكتبات بشكل منفصل:
+```
+pip install beautifulsoup4
+pip install python-whois
+pip install dnspython
+# ... وهكذا لباقي المكتبات
+```
+
+3. استخدام بيئة افتراضية:
+```
+python -m venv venv
+source venv/bin/activate  # على Linux/macOS
+venv\Scripts\activate  # على Windows
+pip install -r requirements.txt
+```
+
+### English:
+
+#### Issue: Library Installation Errors
+
+If you encounter problems installing some libraries, try the following solutions:
+
+1. Make sure development tools are installed:
+   - On Linux: `sudo apt-get install python3-dev build-essential`
+   - On Windows: Ensure Visual C++ Build Tools are installed
+
+2. Install libraries separately:
+```
+pip install beautifulsoup4
+pip install python-whois
+pip install dnspython
+# ... and so on for other libraries
+```
+
+3. Use a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate  # on Linux/macOS
+venv\Scripts\activate  # on Windows
+pip install -r requirements.txt
+```
+
+## للمساعدة | For Help
+
+### العربية:
+إذا واجهت أي مشاكل أخرى في التثبيت، يرجى فتح مشكلة على GitHub أو التواصل عبر البريد الإلكتروني: SaudiLinux7@gmail.com
+
+### English:
+If you encounter any other installation issues, please open an issue on GitHub or contact via email: SaudiLinux7@gmail.com

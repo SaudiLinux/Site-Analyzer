@@ -1,0 +1,252 @@
+# أمثلة استخدام أدوات تحليل وفحص أمان المواقع
+# Usage Examples for Website Analysis and Security Testing Tools
+
+## أداة تحليل المواقع (Site Analyzer) | Site Analyzer Tool
+
+### العربية:
+
+#### 1. فحص أساسي لموقع
+
+```
+python site_analyzer.py -t example.com
+```
+
+هذا الأمر سيقوم بفحص الموقع example.com بإعدادات افتراضية (عمق زحف = 1).
+
+#### 2. فحص متقدم مع عمق زحف أكبر
+
+```
+python site_analyzer.py -t example.com -d 3 --threads 10 -v
+```
+
+هذا الأمر سيقوم بفحص الموقع example.com بعمق زحف = 3، واستخدام 10 مسارات تنفيذ متزامنة، وتمكين الإخراج المفصل.
+
+#### 3. فحص موقع مع تحديد مجلد مخصص للتقارير
+
+```
+python site_analyzer.py -t example.com -o my_reports
+```
+
+هذا الأمر سيقوم بفحص الموقع example.com وحفظ التقارير في مجلد my_reports.
+
+#### 4. فحص موقع مع تعيين مهلة زمنية مخصصة
+
+```
+python site_analyzer.py -t example.com --timeout 20
+```
+
+هذا الأمر سيقوم بفحص الموقع example.com مع تعيين مهلة زمنية للطلبات = 20 ثانية.
+
+#### 5. فحص موقع بدون ألوان في الإخراج
+
+```
+python site_analyzer.py -t example.com --no-color
+```
+
+هذا الأمر سيقوم بفحص الموقع example.com وإظهار النتائج بدون ألوان (مفيد للسجلات).
+
+### English:
+
+#### 1. Basic Website Scan
+
+```
+python site_analyzer.py -t example.com
+```
+
+This command will scan the website example.com with default settings (crawl depth = 1).
+
+#### 2. Advanced Scan with Greater Crawl Depth
+
+```
+python site_analyzer.py -t example.com -d 3 --threads 10 -v
+```
+
+This command will scan the website example.com with crawl depth = 3, using 10 concurrent threads, and enabling verbose output.
+
+#### 3. Website Scan with Custom Report Directory
+
+```
+python site_analyzer.py -t example.com -o my_reports
+```
+
+This command will scan the website example.com and save reports in the my_reports directory.
+
+#### 4. Website Scan with Custom Timeout
+
+```
+python site_analyzer.py -t example.com --timeout 20
+```
+
+This command will scan the website example.com with a request timeout of 20 seconds.
+
+#### 5. Website Scan without Colored Output
+
+```
+python site_analyzer.py -t example.com --no-color
+```
+
+This command will scan the website example.com and display results without colors (useful for logs).
+
+## أداة استغلال الثغرات (Vulnerability Exploiter) | Vulnerability Exploiter Tool
+
+### العربية:
+
+#### 1. اختبار جميع الثغرات
+
+```
+python vulnerability_exploiter.py -t example.com --all
+```
+
+هذا الأمر سيقوم باختبار جميع أنواع الثغرات المدعومة في الموقع example.com.
+
+#### 2. اختبار ثغرات XSS فقط
+
+```
+python vulnerability_exploiter.py -t example.com --xss
+```
+
+هذا الأمر سيقوم باختبار ثغرات XSS فقط في الموقع example.com.
+
+#### 3. اختبار ثغرات SQL Injection مع استخدام بروكسي
+
+```
+python vulnerability_exploiter.py -t example.com --sqli --proxy http://127.0.0.1:8080
+```
+
+هذا الأمر سيقوم باختبار ثغرات SQL Injection في الموقع example.com مع توجيه الطلبات عبر البروكسي المحدد.
+
+#### 4. استخدام نتائج تحليل الموقع كمدخل
+
+```
+python vulnerability_exploiter.py -t example.com -i reports/example.com_20230101_120000.json --all
+```
+
+هذا الأمر سيقوم باستخدام نتائج تحليل الموقع من الملف المحدد كمدخل لاختبار الثغرات.
+
+#### 5. اختبار ثغرات متعددة مع تمكين الإخراج المفصل
+
+```
+python vulnerability_exploiter.py -t example.com --xss --csrf --lfi -v
+```
+
+هذا الأمر سيقوم باختبار ثغرات XSS و CSRF و LFI في الموقع example.com مع تمكين الإخراج المفصل.
+
+### English:
+
+#### 1. Test All Vulnerabilities
+
+```
+python vulnerability_exploiter.py -t example.com --all
+```
+
+This command will test all supported vulnerability types on the website example.com.
+
+#### 2. Test XSS Vulnerabilities Only
+
+```
+python vulnerability_exploiter.py -t example.com --xss
+```
+
+This command will test only XSS vulnerabilities on the website example.com.
+
+#### 3. Test SQL Injection Vulnerabilities with Proxy
+
+```
+python vulnerability_exploiter.py -t example.com --sqli --proxy http://127.0.0.1:8080
+```
+
+This command will test SQL Injection vulnerabilities on the website example.com while routing requests through the specified proxy.
+
+#### 4. Use Site Analysis Results as Input
+
+```
+python vulnerability_exploiter.py -t example.com -i reports/example.com_20230101_120000.json --all
+```
+
+This command will use the site analysis results from the specified file as input for vulnerability testing.
+
+#### 5. Test Multiple Vulnerabilities with Verbose Output
+
+```
+python vulnerability_exploiter.py -t example.com --xss --csrf --lfi -v
+```
+
+This command will test XSS, CSRF, and LFI vulnerabilities on the website example.com with verbose output enabled.
+
+## سير العمل النموذجي | Typical Workflow
+
+### العربية:
+
+#### الخطوة 1: تحليل الموقع
+
+```
+python site_analyzer.py -t example.com -o reports -d 2 -v
+```
+
+#### الخطوة 2: استغلال الثغرات المكتشفة
+
+```
+python vulnerability_exploiter.py -t example.com -i reports/example.com_[TIMESTAMP].json --all -v
+```
+
+#### الخطوة 3: مراجعة التقارير
+
+راجع ملفات التقارير المنشأة في مجلد reports للحصول على معلومات مفصلة حول الثغرات المكتشفة وطرق استغلالها.
+
+### English:
+
+#### Step 1: Analyze the Website
+
+```
+python site_analyzer.py -t example.com -o reports -d 2 -v
+```
+
+#### Step 2: Exploit Discovered Vulnerabilities
+
+```
+python vulnerability_exploiter.py -t example.com -i reports/example.com_[TIMESTAMP].json --all -v
+```
+
+#### Step 3: Review Reports
+
+Review the report files created in the reports directory for detailed information about discovered vulnerabilities and exploitation methods.
+
+## نصائح وحيل | Tips and Tricks
+
+### العربية:
+
+1. **استخدام البروكسي**: إذا كنت تريد تحليل الطلبات والاستجابات بشكل أكثر تفصيلاً، استخدم أداة مثل Burp Suite أو OWASP ZAP كبروكسي:
+   ```
+   python site_analyzer.py -t example.com --proxy http://127.0.0.1:8080
+   ```
+
+2. **تقليل عمق الزحف للمواقع الكبيرة**: للمواقع الكبيرة جداً، استخدم عمق زحف أقل لتجنب استهلاك الكثير من الموارد:
+   ```
+   python site_analyzer.py -t example.com -d 1 --threads 3
+   ```
+
+3. **استخدام ملفات تعريف الارتباط للمواقع التي تتطلب تسجيل الدخول**:
+   ```
+   python vulnerability_exploiter.py -t example.com --all --cookies "session=abc123; user=admin"
+   ```
+
+4. **تصدير النتائج لأدوات أخرى**: يمكنك استخدام نتائج التحليل مع أدوات أخرى عن طريق تصدير التقارير بتنسيق JSON.
+
+### English:
+
+1. **Using Proxy**: If you want to analyze requests and responses in more detail, use a tool like Burp Suite or OWASP ZAP as a proxy:
+   ```
+   python site_analyzer.py -t example.com --proxy http://127.0.0.1:8080
+   ```
+
+2. **Reducing Crawl Depth for Large Websites**: For very large websites, use a lower crawl depth to avoid consuming too many resources:
+   ```
+   python site_analyzer.py -t example.com -d 1 --threads 3
+   ```
+
+3. **Using Cookies for Websites that Require Login**:
+   ```
+   python vulnerability_exploiter.py -t example.com --all --cookies "session=abc123; user=admin"
+   ```
+
+4. **Exporting Results to Other Tools**: You can use the analysis results with other tools by exporting reports in JSON format.
