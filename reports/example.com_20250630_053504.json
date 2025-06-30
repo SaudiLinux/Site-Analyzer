@@ -1,0 +1,184 @@
+{
+    "target": "http://example.com",
+    "base_domain": "example.com",
+    "scan_date": "2025-06-30 05:34:10",
+    "metadata": {
+        "title": "Example Domain",
+        "description": null,
+        "keywords": null,
+        "generator": null,
+        "robots": null,
+        "author": null,
+        "server": null,
+        "technologies": [],
+        "headers": {
+            "Accept-Ranges": "bytes",
+            "Content-Type": "text/html",
+            "ETag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+            "Last-Modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Content-Length": "648",
+            "Cache-Control": "max-age=2255",
+            "Date": "Mon, 30 Jun 2025 02:34:11 GMT",
+            "Connection": "keep-alive"
+        }
+    },
+    "whois": {
+        "domain_name": "EXAMPLE.COM",
+        "registrar": "RESERVED-Internet Assigned Numbers Authority",
+        "registrar_url": "http://res-dom.iana.org",
+        "reseller": null,
+        "whois_server": "whois.iana.org",
+        "referral_url": null,
+        "updated_date": "2024-08-14 07:01:34",
+        "creation_date": "1995-08-14 04:00:00",
+        "expiration_date": "2025-08-13 04:00:00",
+        "name_servers": [
+            "A.IANA-SERVERS.NET",
+            "B.IANA-SERVERS.NET"
+        ],
+        "status": [
+            "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+            "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+            "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+        ],
+        "emails": null,
+        "dnssec": "signedDelegation",
+        "name": null,
+        "org": null,
+        "address": null,
+        "city": null,
+        "state": null,
+        "registrant_postal_code": null,
+        "country": null
+    },
+    "dns": {
+        "A": [
+            "23.192.228.80",
+            "23.192.228.84",
+            "96.7.128.198",
+            "96.7.128.175",
+            "23.215.0.138",
+            "23.215.0.136"
+        ],
+        "AAAA": [
+            "2600:1408:ec00:36::1736:7f24",
+            "2600:1408:ec00:36::1736:7f31",
+            "2600:1406:3a00:21::173e:2e65",
+            "2600:1406:3a00:21::173e:2e66",
+            "2600:1406:bc00:53::b81e:94c8",
+            "2600:1406:bc00:53::b81e:94ce"
+        ],
+        "MX": [
+            "0 ."
+        ],
+        "NS": [],
+        "TXT": [
+            "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+            "\"v=spf1 -all\""
+        ],
+        "CNAME": [],
+        "SOA": [
+            "ns.icann.org. noc.dns.icann.org. 2025011698 7200 3600 1209600 3600"
+        ]
+    },
+    "security_headers": {
+        "Strict-Transport-Security": {
+            "present": false,
+            "value": null
+        },
+        "Content-Security-Policy": {
+            "present": false,
+            "value": null
+        },
+        "X-Content-Type-Options": {
+            "present": false,
+            "value": null
+        },
+        "X-Frame-Options": {
+            "present": false,
+            "value": null
+        },
+        "X-XSS-Protection": {
+            "present": false,
+            "value": null
+        },
+        "Referrer-Policy": {
+            "present": false,
+            "value": null
+        },
+        "Feature-Policy": {
+            "present": false,
+            "value": null
+        },
+        "Permissions-Policy": {
+            "present": false,
+            "value": null
+        }
+    },
+    "links": {
+        "internal": [],
+        "external": [
+            "https://www.iana.org/domains/example"
+        ],
+        "resources": []
+    },
+    "vulnerabilities": [
+        {
+            "name": "No SSL/TLS",
+            "severity": "High",
+            "description": "Website does not use HTTPS",
+            "recommendation": "Implement HTTPS with a valid SSL certificate"
+        },
+        {
+            "name": "Missing Strict-Transport-Security Header",
+            "severity": "High",
+            "description": "The Strict-Transport-Security security header is not set",
+            "recommendation": "Implement the Strict-Transport-Security header to enhance security"
+        },
+        {
+            "name": "Missing Content-Security-Policy Header",
+            "severity": "High",
+            "description": "The Content-Security-Policy security header is not set",
+            "recommendation": "Implement the Content-Security-Policy header to enhance security"
+        },
+        {
+            "name": "Missing X-Content-Type-Options Header",
+            "severity": "Medium",
+            "description": "The X-Content-Type-Options security header is not set",
+            "recommendation": "Implement the X-Content-Type-Options header to enhance security"
+        },
+        {
+            "name": "Missing X-Frame-Options Header",
+            "severity": "Medium",
+            "description": "The X-Frame-Options security header is not set",
+            "recommendation": "Implement the X-Frame-Options header to enhance security"
+        },
+        {
+            "name": "Missing X-XSS-Protection Header",
+            "severity": "Low",
+            "description": "The X-XSS-Protection security header is not set",
+            "recommendation": "Implement the X-XSS-Protection header to enhance security"
+        },
+        {
+            "name": "Missing Referrer-Policy Header",
+            "severity": "Medium",
+            "description": "The Referrer-Policy security header is not set",
+            "recommendation": "Implement the Referrer-Policy header to enhance security"
+        },
+        {
+            "name": "Missing Feature-Policy Header",
+            "severity": "Low",
+            "description": "The Feature-Policy security header is not set",
+            "recommendation": "Implement the Feature-Policy header to enhance security"
+        },
+        {
+            "name": "Missing Permissions-Policy Header",
+            "severity": "Low",
+            "description": "The Permissions-Policy security header is not set",
+            "recommendation": "Implement the Permissions-Policy header to enhance security"
+        }
+    ],
+    "misconfigurations": []
+}
