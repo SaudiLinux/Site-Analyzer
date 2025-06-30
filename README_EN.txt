@@ -22,7 +22,7 @@ An advanced tool written in Python that tests and exploits security vulnerabilit
 
 ## 2. System Requirements
 
-- Python 3.6 or newer
+- Python 3.9 or newer
 - The following libraries:
   - requests>=2.28.1
   - beautifulsoup4>=4.11.1
@@ -36,7 +36,7 @@ An advanced tool written in Python that tests and exploits security vulnerabilit
   - pyopenssl>=22.1.0
   - cryptography>=38.0.1
   - scapy>=2.4.5
-  - sockspy>=1.7.1
+  - sockspy>=0.2.7
 
 ## 3. Installation
 

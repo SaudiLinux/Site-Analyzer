@@ -21,9 +21,6 @@ setup(
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: MIT License",
@@ -31,7 +28,7 @@ setup(
         "Topic :: Security",
         "Topic :: Internet :: WWW/HTTP",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.9",
     install_requires=requirements,
     entry_points={
         "console_scripts": [

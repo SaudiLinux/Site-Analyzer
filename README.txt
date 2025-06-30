@@ -22,7 +22,7 @@
 
 ## 2. متطلبات النظام
 
-- Python 3.6 أو أحدث
+- Python 3.9 أو أحدث
 - المكتبات التالية:
   - requests>=2.28.1
   - beautifulsoup4>=4.11.1
@@ -36,7 +36,7 @@
   - pyopenssl>=22.1.0
   - cryptography>=38.0.1
   - scapy>=2.4.5
-  - sockspy>=1.7.1
+  - sockspy>=0.2.7
 
 ## 3. طريقة التثبيت
 

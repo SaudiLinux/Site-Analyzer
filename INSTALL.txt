@@ -4,13 +4,13 @@
 ## متطلبات النظام | System Requirements
 
 ### العربية:
-- Python 3.6 أو أحدث
+- Python 3.9 أو أحدث
 - نظام تشغيل: Windows, Linux, macOS
 - ذاكرة: 2GB RAM على الأقل (يوصى بـ 4GB للمواقع الكبيرة)
 - مساحة تخزين: 500MB على الأقل
 
 ### English:
-- Python 3.6 or newer
+- Python 3.9 or newer
 - Operating System: Windows, Linux, macOS
 - Memory: At least 2GB RAM (4GB recommended for large websites)
 - Storage: At least 500MB

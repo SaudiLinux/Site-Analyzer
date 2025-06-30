@@ -10,4 +10,4 @@ tqdm>=4.64.1
 pyopenssl>=22.1.0
 cryptography>=38.0.1
 scapy>=2.4.5
-sockspy>=1.7.1
+sockspy>=0.2.7
